@@ -88,6 +88,7 @@ namespace NLayer_Entidades
             set { _id = value; }
         }
 
+        public int id { get; set; }
 
         public override string ToString()
         {
