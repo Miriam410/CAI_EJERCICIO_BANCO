@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NLayer_Entidades;
-using NLayer_Datos;
+
+
 
 namespace NLayer_Formulario
 {
@@ -18,7 +18,7 @@ namespace NLayer_Formulario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Inicio());
         }
     }
 }

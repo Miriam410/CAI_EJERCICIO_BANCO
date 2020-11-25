@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace NLayer_Formulario
 {
-    public partial class Form1 : Form
+    public partial class TarjetaCredito : Form
     {
-        public Form1()
+        public TarjetaCredito()
         {
             InitializeComponent();
+        }
+
+        private void TarjetaCredito_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

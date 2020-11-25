@@ -46,14 +46,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuenta.Designer.cs">
+      <DependentUpon>Cuenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prestamo.Designer.cs">
+      <DependentUpon>Prestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TarjetaCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TarjetaCredito.Designer.cs">
+      <DependentUpon>TarjetaCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilidades.Designer.cs">
+      <DependentUpon>Utilidades.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cuenta.resx">
+      <DependentUpon>Cuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prestamo.resx">
+      <DependentUpon>Prestamo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +105,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TarjetaCredito.resx">
+      <DependentUpon>TarjetaCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilidades.resx">
+      <DependentUpon>Utilidades.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
