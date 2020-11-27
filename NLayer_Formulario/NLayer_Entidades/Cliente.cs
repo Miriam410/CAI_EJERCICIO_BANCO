@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace NLayer_Entidades
 {
+    [DataContract]
     public class Cliente
     {
         private int _dni;
-
+        [DataMember]
         public int Dni
         {
             get { return _dni; }
@@ -17,7 +19,7 @@ namespace NLayer_Entidades
         }
 
         private string _nombre;
-
+        [DataMember]
         public string Nombre
         {
             get { return _nombre; }
@@ -92,7 +94,7 @@ namespace NLayer_Entidades
 
         public override string ToString()
         {
-            return string.Format("Cliente{0} Nombre{1} Apellido{2}",this._id,this._nombre,this._apellido) 
+            return string.Format("Cliente{0} Nombre{1} Apellido{2}", this._id, this._nombre, this._apellido);
         }
     }
 }

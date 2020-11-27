@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace NLayer_Entidades
 {
+    [DataContract]
     public class Cuenta
     {
         private int _nroCuenta;
-
+        [DataMember]
         public int NroCuenta
         {
             get { return _nroCuenta; }
@@ -17,7 +19,7 @@ namespace NLayer_Entidades
         }
 
         private string _descripcion;
-
+        [DataMember]
         public string Descripcion
         {
             get { return _descripcion; }
@@ -25,7 +27,7 @@ namespace NLayer_Entidades
         }
 
         private float _saldo;
-
+        [DataMember]
         public float Saldo
         {
             get { return _saldo; }
@@ -33,7 +35,7 @@ namespace NLayer_Entidades
         }
 
         private DateTime _fechaApertura;
-
+        [DataMember]
         public DateTime FechaApertura
         {
             get { return _fechaApertura; }
@@ -41,7 +43,7 @@ namespace NLayer_Entidades
         }
 
         private DateTime _fechaModificacion;
-
+        [DataMember]
         public DateTime FechaModificacion
         {
             get { return _fechaModificacion; }
@@ -49,7 +51,7 @@ namespace NLayer_Entidades
         }
 
         private bool _activo;
-
+        [DataMember]
         public bool Activo
         {
             get { return _activo; }
@@ -57,13 +59,16 @@ namespace NLayer_Entidades
         }
 
         private int _idCliente;
-
+        [DataMember]
         public int IdCliente
         {
             get { return _idCliente; }
             set { _idCliente = value; }
         }
 
-       
+        public override string ToString()
+        {
+            return string.Format("({0}) Cuenta Nro{1} / Saldo {2}", this.IdCliente, this.NroCuenta, this.Saldo.ToString("0.00"));
+        }
     }
 }

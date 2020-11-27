@@ -34,6 +34,7 @@ namespace NLayer_Formulario
             this.lblCuenta = new System.Windows.Forms.Label();
             this.lblTarjetaCredito = new System.Windows.Forms.Label();
             this.lblPrestamo = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -86,11 +87,22 @@ namespace NLayer_Formulario
             this.lblPrestamo.TabIndex = 3;
             this.lblPrestamo.Text = "PRESTAMO";
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(190, 107);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 395);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblTarjetaCredito);
             this.Controls.Add(this.lblPrestamo);
             this.Controls.Add(this.lblCuenta);
@@ -111,6 +123,7 @@ namespace NLayer_Formulario
         private System.Windows.Forms.Label lblCuenta;
         private System.Windows.Forms.Label lblTarjetaCredito;
         private System.Windows.Forms.Label lblPrestamo;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
 

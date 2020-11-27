@@ -12,7 +12,7 @@ namespace NLayer_Negocio
     {
         private ClienteMapper mapper;
 
-        private ClienteServicio()
+        public  ClienteServicio()
         {
             mapper = new ClienteMapper();
         }

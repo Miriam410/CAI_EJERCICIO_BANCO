@@ -22,6 +22,7 @@ namespace NLayer_Negocio
         public Cuenta Traer(int idCliente)
         {
             Cuenta result = mapper.Traer(idCliente);
+
             return result;
         }
 
